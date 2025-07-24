@@ -1,60 +1,120 @@
-*{
-	margin : 0;
-	padding : 0;
-	box-sizing : border-box;
-	font-family : Arial, Helvetica, sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-	background-color : #e5e5fd;
-	height : 2500px;
-	border : 10px solid #1d1e4c;
+
+.container {
+	background-color: #e5e5fd;
+	min-height: 100vh; /* ✅ Better than fixed height */
+	border: 10px solid #1d1e4c;
 }
-.main{
-	margin-top : 100px;
-	display : flex;
+
+.content {
+	width: 90%; /* ✅ Changed from fixed 900px to percentage for responsiveness */
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.main {
+	margin-top: 100px;
+	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	flex-wrap: wrap; /* ✅ Allows stacking on smaller screens */
 }
-.content{
-	width : 900px;
-	margin : 0 auto;
-}
-.image, img{
+
+.image, img {
 	height: 320px;
-	width : 300px;
-	border : 2px solid #1d1e4c;
-	border-radius : 45%;
+	width: 300px;
+	border: 2px solid #1d1e4c;
+	border-radius: 45%;
+	object-fit: cover;
 }
-.header_heading{
-	font-size : 35px;
-	text-align : end;
+
+.header_heading {
+	font-size: 35px;
+	text-align: end;
 }
-.about{
+
+.about {
 	margin-top: 50px;
-	text-align : justify;
-	font-size : 20px;
+	text-align: justify;
+	font-size: 20px;
 }
-.about h2{
-	font-size : 60px;
-	margin-bottom : 20px;
+
+.about h2 {
+	font-size: 60px;
+	margin-bottom: 20px;
 }
-.about p{
-	line-height : 30px;
-	letter-spacing : 1.5px;
+
+.about p {
+	line-height: 30px;
+	letter-spacing: 1.5px;
 }
-.bio h3{
-	margin-top : 50px;
-	margin-bottom : 20px;
-	font-size : 50px;
+
+.bio h3 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 50px;
 }
-.bio li{
-	font-size : 20px;
-	line-height : 30px;
-	letter-spacing : 1.2px;
-	text-align : justify;
-	margin-left : 40px;
+
+.bio li {
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 1.2px;
+	text-align: justify;
+	margin-left: 40px;
 }
-.foot{
-	margin-top : 150px;
-	text-align : right;
+
+.foot {
+	margin-top: 150px;
+	text-align: right;
+}
+
+/* ✅✅ Responsive Design using Media Queries */
+@media screen and (max-width: 768px) {
+	.main {
+		flex-direction: column; /* ✅ Stack image and heading vertically */
+		align-items: center;
+		text-align: center;
+	}
+
+	.header_heading {
+		font-size: 28px;
+		text-align: center; /* ✅ Center on smaller screens */
+		margin-top: 20px;
+	}
+
+	.image, img {
+		width: 220px; /* ✅ Reduce image size */
+		height: 250px;
+	}
+	
+	.about h2 {
+		font-size: 40px; /* ✅ Adjust headings */
+	}
+	
+	.bio h3 {
+		font-size: 35px;
+	}
+	
+	.foot {
+		text-align: center; /* ✅ Center footer */
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.about, .bio li {
+		font-size: 16px; /* ✅ Smaller font on phones */
+	}
+
+	.bio h3 {
+		font-size: 30px;
+	}
+
+	.about h2 {
+		font-size: 32px;
+	}
 }
