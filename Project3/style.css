@@ -1,0 +1,226 @@
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+html,body{
+	height : 100%;
+}
+.img1{
+	background-image : url("image1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height : 100vh;
+	width : 100%;
+
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+.img1 p{
+	background-color : rgba(0,0,0,1);
+	color : white;
+	font-size : 30px;
+	font-family : "Lato", sans-serif;
+	padding : 20px 30px;
+	border-radius: 10px;
+	letter-spacing: 4px;
+}
+
+.img2{
+	background-image : url("image2.png");
+	height : 100vh;
+	width : 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.img2 .sectionOne{
+	background-color : lightgray;
+	color : black;
+	text-align : center;
+	padding : 40px 40px;
+}
+.img2 h2{
+	font-size : 40px;
+	font-weight: 100;
+}
+.img2 p{
+	margin-top : 20px;
+	font-size : 20px;
+}
+.img2 h3{
+	background-color : rgba(0,0,0,0.5);
+	color : white;
+	font-size : 30px;
+	font-family : "Lato", sans-serif;
+	padding : 20px 30px;
+	border-radius: 10px;
+	letter-spacing: 4px;
+	width : 400px;
+	margin : 0 auto;
+	margin-top : 250px;
+}
+
+.img3{
+	background-image : url("image3.png");
+	height : 100vh;
+	width : 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.img3 .sectionTwo{
+	background-color : lightgray;
+	color : black;
+	text-align : center;
+	padding : 40px 40px;
+}
+.img3 h2{
+	font-size : 40px;
+	font-weight: 100;
+}
+.img3 p{
+	margin-top : 20px;
+	font-size : 20px;
+}
+.img3 h3{
+	background-color : rgba(0,0,0,0.5);
+	color : white;
+	font-size : 45px;
+	font-family : "Lato", sans-serif;
+	padding : 20px 30px;
+	border-radius: 10px;
+	letter-spacing: 4px;
+	width : 800px;
+	text-align : center;
+	margin : 0 auto;
+	margin-top : 200px;
+}
+
+.sectionThree{
+	background-color : lightgray;
+	color : black;
+	text-align : center;
+	padding : 40px 40px;
+	text-align : center;
+}
+.sectionThree h2{
+	font-size : 40px;
+	font-weight: 100;
+}
+.sectionThree p{
+	margin-top : 20px;
+	font-size : 20px;
+}
+
+.endimg{
+	background-image : url("image1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height : 100vh;
+	width : 100%;
+
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+.endimg h2{
+	background-color : rgba(0,0,0,1);
+	color : white;
+	font-size : 45px;
+	font-family : "Lato", sans-serif;
+	padding : 20px 30px;
+	letter-spacing: 4px;
+}
+
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 1024px) {
+	.img2 h3,
+	.img3 h3 {
+		width: 90%;
+		font-size: 28px;
+		margin-top: 180px;
+	}
+}
+
+@media (max-width: 768px) {
+	.img1 p,
+	.img2 h3,
+	.img3 h3,
+	.endimg h2 {
+		font-size: 22px;
+		padding: 15px 20px;
+		letter-spacing: 2px;
+	}
+
+	.img2 h2,
+	.img3 h2,
+	.sectionThree h2 {
+		font-size: 28px;
+	}
+
+	.img2 p,
+	.img3 p,
+	.sectionThree p {
+		font-size: 16px;
+	}
+
+	.img2 h3,
+	.img3 h3 {
+		width: 90%;
+		margin-top: 120px;
+	}
+
+	.img1 p,
+	.endimg h2 {
+		text-align: center;
+	}
+
+	.sectionThree {
+		padding: 30px 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.img1 p,
+	.img2 h3,
+	.img3 h3,
+	.endimg h2 {
+		font-size: 18px;
+		padding: 12px 16px;
+		letter-spacing: 1px;
+	}
+
+	.img2 h2,
+	.img3 h2,
+	.sectionThree h2 {
+		font-size: 22px;
+	}
+
+	.img2 p,
+	.img3 p,
+	.sectionThree p {
+		font-size: 14px;
+	}
+
+	.img2 h3,
+	.img3 h3 {
+		width: 90%;
+		margin-top: 100px;
+	}
+
+	.sectionThree {
+		padding: 20px 15px;
+	}
+}
