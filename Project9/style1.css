@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+	margin : 0px;
+	padding : 0 25px;
+	box-sizing : border-box;
+	font-family: 'Roboto', sans-serif;
+}
+.navCon{
+	display : flex;
+	justify-content: space-between;
+	margin : 25px;
+	position: sticky;
+	top : 0;
+	height : 50px;
+}
+.sidenav{
+	display : flex;
+}
+.sidenav a{
+	text-decoration : none;
+	color : black;
+}
+.sidenavCon{
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.hero{
+	margin : 75px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.herotext{
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.herotext h1{
+	font-size : 70px;
+}
+.herotext h3{
+	font-size : 25px;
+	color : rgba(0,0,0,0.6);
+	line-height: 50px;
+	font-weight : 300;
+}
+.heroimg img{
+	border-radius : 10%;
+}
+
+.longcard{
+	margin : 90px 30px;
+	display : flex;
+	border : 2px solid #ccc;
+}
+.longcardtext{
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.foottext{
+	display : flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.maintext h1, p{
+	padding : 10px;
+}
+.foottext a{
+	text-decoration: none;
+	color : black;
+}
+
+.cardContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center	;
+}
+.cardCon{
+	border : 2px solid #ccc;
+	display : flex;
+	flex-direction : column;
+	/* box-shadow: 20px; */
+}
+
+.longbigcard{
+	margin : 75px 30px;
+	display: flex;
+	justify-content: center;
+}
+.longbigcardtext{
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	/* margin : 10px; */
+	background-color : rgba(0,255,255,0.1);
+	padding : 0px;
+}
+.longbigcardtext h1{
+	font-size : 50px;
+}
+.longbigcardtext h3, p{
+	font-size : 20px;
+	color : rgba(0,0,0,0.6);
+	line-height: 30px;
+	font-weight : 300;
+}
+.longbigcardtext .foottext{
+	margin-top: 20px;
+}
+.longbigcardimg{
+	padding : 0px;
+}
+.but a{
+	color : white;
+	background-color: blueviolet;
+	padding : 10px 20px;
+	border-radius: 10%;
+	text-decoration: none;
+	margin-bottom : 20px;
+}
+.but{
+	display : flex;
+	flex-direction: row-reverse;
+}
+footer{
+	display : flex;
+	justify-content: space-between;
+	padding : 50px;
+	border-top : 2px solid #ccc;
+}
+footer .copy h4{
+	line-height: 1.5;
+	font-size : 18px;
+	font-weight: 300;
+}
+.icons{
+	display : flex;
+}
+.icons a{
+	text-decoration: none;
+	color : black;
+}
+
